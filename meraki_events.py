@@ -96,7 +96,7 @@ if __name__ == "__main__":
   if args.csv:
     neCSV  = open(args.csv, "w")
 
-    fieldnames = ["occurredAt", "networkId", "type", "description", "clientId", "clientDescription", "deviceSerial", "deviceName", "ssidNumber", "ssidName", "eventData"]
+    fieldnames = ["occurredAt", "networkId", "type", "description", "clientId", "clientDescription", "clientMac" , "category" , "deviceSerial", "deviceName", "ssidNumber", "ssidName", "eventData"]
     neCSVwriter = csv.DictWriter(neCSV, fieldnames=fieldnames)
     neCSVwriter.writeheader()
 
